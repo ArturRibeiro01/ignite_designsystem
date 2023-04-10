@@ -1,0 +1,33 @@
+.tokens-grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  /* color: #fff; */
+}
+
+.tokens-grid thead th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.tokens-grid tbody td {
+  padding: 0.75rem 1rem;
+  /* color: #ccc; */
+  color: #333;
+}
+
+.tokens-grid tbody td:first-child{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.tokens-grid tbody td:last-child{
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.tokens-grid tbody tr:nth-child(even) td{
+  background-color: #eee;
+}
