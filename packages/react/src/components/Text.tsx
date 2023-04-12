@@ -1,8 +1,35 @@
-import { ComponentProps } from 'react'
+import { ComponentProps, ElementType } from 'react'
 import { styled } from '../styles'
 
 export const Text = styled('p', {
-  padding: '$4',
+  fontFamily: '$default',
+  lineHeight: '$base',
+  margin: 0,
+  color: '$gray400',
+
+  variants: {
+    size: {
+      xxs: { fontSize: '$xxs' },
+      xs: { fontSize: '$xs' },
+      sm: { fontSize: '$sm' },
+      md: { fontSize: '$md' },
+      lg: { fontSize: '$md' },
+      xl: { fontSize: '$xl' },
+      '2xl': { fontSize: '$2xl' },
+      '4xl': { fontSize: '$4xl' },
+      '5xl': { fontSize: '$5xl' },
+      '6xl': { fontSize: '$6xl' },
+      '7xl': { fontSize: '$7xl' },
+      '8xl': { fontSize: '$8xl' },
+      '9xl': { fontSize: '$9xl' },
+    },
+  },
+
+  defaultVariants: {
+    size: 'md',
+  },
 })
 
-export interface TextProps extends ComponentProps<typeof Text> {}
+export interface TextProps extends ComponentProps<typeof Text> {
+  as?: ElementType
+}
