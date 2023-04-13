@@ -1,7 +1,6 @@
-import React from 'react'
 import { Label, MultiStepContainer, Step, Steps } from './styles'
 
-interface MultiStepProps {
+export interface MultiStepProps {
   size: number
   currentStep?: number
 }
