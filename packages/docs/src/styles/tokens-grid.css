@@ -2,20 +2,19 @@
   width: 100%;
   border-collapse: collapse;
   font-family: sans-serif;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .tokens-grid thead th {
   padding: 0.75rem 1rem;
   text-align: left;
   text-transform: uppercase;
-  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .tokens-grid tbody td {
   padding: 0.75rem 1rem;
-  /* color: #ccc; */
-  color: #333;
+  color: #ccc;
 }
 
 .tokens-grid tbody td:first-child{
@@ -29,5 +28,5 @@
 }
 
 .tokens-grid tbody tr:nth-child(even) td{
-  background-color: #eee;
+  background-color: #666;
 }
