@@ -8,6 +8,6 @@
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
   "ignore": [
-    "@rocketseat-aulas-ignite-ui/docs"
+    "@ignite-ui/docs"
   ]
 }
